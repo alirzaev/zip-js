@@ -1,12 +1,13 @@
 {
   "name": "@alirzaev/zip-js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple zip function implementation",
   "main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/alirzaev/zip-js.git"
   },
+  "types": "src/index.d.ts",
   "publishConfig": {
     "registry":"https://npm.pkg.github.com"
   },

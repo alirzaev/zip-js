@@ -1,6 +1,6 @@
 {
   "name": "@alirzaev/zip-js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A simple zip function implementation",
   "main": "src/index.js",
   "repository": {

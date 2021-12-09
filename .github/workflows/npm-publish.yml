@@ -26,6 +26,8 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 16
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@alirzaev'
       - run: npm ci
       - run: npm run build
       - run: npm publish

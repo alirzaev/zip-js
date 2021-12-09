@@ -15,8 +15,10 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 16
-      - run: npm ci
-      - run: npm run build
+      - run: |
+          npm ci
+          npm run build
+          npm test
 
   publish-npm:
     needs: build
@@ -28,8 +30,9 @@ jobs:
           node-version: 16
           registry-url: 'https://npm.pkg.github.com'
           scope: '@alirzaev'
-      - run: npm ci
-      - run: npm run build
-      - run: npm publish
+      - run: |
+          npm ci
+          npm run build
+          npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}

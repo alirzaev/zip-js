@@ -1,15 +1,19 @@
 {
   "name": "@alirzaev/zip-js",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "A simple zip function implementation",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/alirzaev/zip-js.git"
   },
-  "types": "src/index.d.ts",
+  "types": "dist/index.d.ts",
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "keywords": [
     "zip",
@@ -20,5 +24,9 @@
   "bugs": {
     "url": "https://github.com/alirzaev/zip-js/issues"
   },
-  "homepage": "https://github.com/alirzaev/zip-js#readme"
+  "homepage": "https://github.com/alirzaev/zip-js#readme",
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^4.5.2"
+  }
 }

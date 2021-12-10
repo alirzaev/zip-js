@@ -32,9 +32,11 @@ describe('zip function', () => {
 
         expect(result).to.deep.equal(expected);
     });
+    /* eslint-disable @typescript-eslint/no-explicit-any */
     it('should fail on null', () => {
         assert.throw(() => zip(null as any as number[]), TypeError);
     });
+    /* eslint-disable @typescript-eslint/no-explicit-any */
     it('should fail on undefined', () => {
         assert.throw(() => zip(undefined as any as number[]), TypeError);
     });
